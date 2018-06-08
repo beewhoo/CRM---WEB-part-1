@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Helvetica, sans-serif;
+  color:white;
+}
+
+h1 {
+
+  text-align: center;
+  background-color:rgb(56,56,56);
+  margin:0px;
+  font-size: 3em;
+}
+
+h3 {
+  color:black;
+  background-color: #FF6347;
+  margin:0px;
+  padding:0.4em;
+}
+
+
+nav ul {
+
+  display:block;
+  background-color: silver;
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.1em;
+  font-size: 1.5em;
+  list-style-type: none;
+
+
+
+}
+
+nav ul a{
+  font-weight: bold;
+  color:white;
+}
+
+main {
+  max-width: 95%;
+  margin:0 auto;
+  color: black;
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+
+  }
+
+
+main ul {
+  list-style-type: none;
+  margin:1em;
+  background-color: skyblue;
+  margin:0.3em;
+  padding:1em;
+}
+
+
+
+
+footer {
+  background-color: black;
+  text-align: center;
+}

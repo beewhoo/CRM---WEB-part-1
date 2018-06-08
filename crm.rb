@@ -4,16 +4,21 @@ require 'sinatra'
 
 
 get '/home' do
-  erb :index
+  erb :home
 end
 
 get '/contacts' do
   @contacts = Contact.all
+  @count = Contact.count
   erb :contacts
 end
 
 get '/about' do
   erb :about
+end
+
+get '/layout' do
+  erb :layout
 end
 
 

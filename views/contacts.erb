@@ -1,33 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>CONTACTS</h1>
-    <nav>
-      <ul>
-        <a href="http://localhost:4567/home">HOME</a>
-      </ul>
-      <ul>
-        <a href="http://localhost:4567/contacts">CONTACTS</a>
-      </ul>
-      <ul>
-        <a href="http://localhost:4567/about">ABOUT</a>
-    </nav>
 
-<h3>LIST OF CONTACTS</h3>
 
+
+  <h3> There are <%= @count %> contacts</h3>
 
   <% @contacts.each do |contact| %>
   <ul>
-  <li><%="Firstname: #{contact.full_name} <br> #{contact.email} <br>
-  #{contact.note}"%></li>
+  <li><%="#{contact.full_name} (#{contact.email})" %> </li>
+  <a href="#">Edit</a> <a href="#">Delete</a>
   <br>
 </ul>
   <% end %>
-
-
-  </body>
-</html>
+</div>
