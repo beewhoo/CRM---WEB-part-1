@@ -2,6 +2,9 @@ require_relative 'contact'
 require 'sinatra'
 
 
+get '/' do
+  erb :home
+end
 
 get '/home' do
   erb :home
@@ -21,6 +24,15 @@ get '/layout' do
   erb :layout
 end
 
+get '/contacts/:id' do
+  params[:id]
+  @contact = Contact.find_by({id: params[:id].to_i})
+  if @contact
+  erb :show_contact
+    else
+   raise Sinatra::NotFound
+  end
+end
 
 
 after do

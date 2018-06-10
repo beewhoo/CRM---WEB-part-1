@@ -2,27 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <meta charset="utf-8">
     <title>CRM</title>
   </head>
   <body>
 
-    <h1>Quick CRM</h1>
+  <header><img src="/logo.jpg" alt="logo"></header>
       <nav>
         <ul>
-          <a href="http://localhost:4567/home">HOME</a>
+          <a href="http://localhost:4567/home"> <img src="/house.png" alt="home"</a>
         </ul>
         <ul>
-          <a href="http://localhost:4567/contacts">ADD A CONTACT</a>
+          <a href="http://localhost:4567/contacts"><img src="/agenda.png" alt="contacts"</a>
         </ul>
         <ul>
-          <a href="http://localhost:4567/about">ABOUT US</a>
+          <a href="http://localhost:4567/about"><img src="/info.png" alt="about"></a>
       </nav>
+
+
+
 
       <main>
   <%= yield %>
       </main>
 
-  <footer>Bibek 2018</footer>
+  <footer>bibekslab Copyright 2018</footer>
   </body>
 </html>

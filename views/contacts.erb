@@ -5,9 +5,9 @@
 
   <% @contacts.each do |contact| %>
   <ul>
-  <li><%="#{contact.full_name} (#{contact.email})" %> </li>
-  <a href="#">Edit</a> <a href="#">Delete</a>
-  <br>
+  <li><a href="/contacts/<%=contact.id%>"><%="#{contact.full_name} (#{contact.email})" %> </li>
+
+  <a href="#"><img src="/change.png" alt="edit"></a> <a href="#"><img src="/trash.png" alt="delete"></a>
+
 </ul>
   <% end %>
-</div>

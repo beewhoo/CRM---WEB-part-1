@@ -2,69 +2,112 @@ html {
   box-sizing: border-box;
 }
 
+header {
+  text-align:center;
+}
+
 body {
-  font-family:Helvetica, sans-serif;
+  font-family:'Nanum Gothic',sans-serif;
   color:white;
+
 }
 
-h1 {
-
-  text-align: center;
-  background-color:rgb(56,56,56);
-  margin:0px;
-  font-size: 3em;
-}
 
 h3 {
-  color:black;
   background-color: #FF6347;
   margin:0px;
-  padding:0.4em;
-}
+  padding:1.2em;
 
+}
 
 nav ul {
 
   display:block;
-  background-color: silver;
+  background-color: rgb(0,191,255, 0.2);
   text-align: center;
   padding: 0.5em;
   margin: 0.1em;
   font-size: 1.5em;
   list-style-type: none;
 
-
-
 }
 
-nav ul a{
-  font-weight: bold;
-  color:white;
+nav ul:hover {
+  background-color: rgb(0,191,255, .7);
+}
+
+
+nav ul img {
+  max-width:100px;
 }
 
 main {
   max-width: 95%;
   margin:0 auto;
-  color: black;
   display: block;
   font-size: 1.1em;
-  font-weight: bold;
 
+  }
+
+  main p {
+    color:black;
   }
 
 
 main ul {
   list-style-type: none;
-  margin:1em;
-  background-color: skyblue;
-  margin:0.3em;
+  margin: 0.3em;
+  background-color: rgb(0,191,255, 0.7);
   padding:1em;
 }
 
+main ul:hover {
+  background-color: rgb(0,191,255, 0.4);
+
+}
+
+main ul a {
+  color:white;
+  font-size: 1.3em;
+}
 
 
+main ul img {
+  max-width:50px;
+  padding:10px;
+}
+
+main ul img:hover {
+  border-radius: 10px;
+  background-color: pink;
+}
+
+div {
+  text-align: center;
+  border:1px solid skyblue;
+  margin: 10px;
+}
+
+.contact_actions li img{
+  max-width: 70px;
+  margin:20px;
+
+}
+.contact_actions img:hover {
+  background-color: pink;
+  border-radius: 10px;
+  cursor:pointer;
+
+}
+
+div img {
+  max-width: 300px;
+}
 
 footer {
-  background-color: black;
+  background-color:rgb(0,191,255, 1);
   text-align: center;
+  position:sticky;
+  max-width: 100%;
+  padding:10px;
 }
