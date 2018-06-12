@@ -3,11 +3,21 @@
 
   <h3> There are <%= @count %> contacts</h3>
 
-  <% @contacts.each do |contact| %>
   <ul>
-  <li><a href="/contacts/<%=contact.id%>"><%="#{contact.full_name} (#{contact.email})" %> </li>
+  <% @contacts.each do |contact| %>
 
-  <a href="#"><img src="/change.png" alt="edit"></a> <a href="#"><img src="/trash.png" alt="delete"></a>
+    <li class = 'icons'>
+      <a href="/contacts/<%=contact.id%>"><%="#{contact.full_name} (#{contact.email})" %><br>
+      <a href="/contacts/<%=contact.id%>/edit"><img src="/change.png" alt="edit"></a>
 
-</ul>
+
+    <form action= "/contacts/<%=contact.id%>" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input type="image" src ="/trash.png" width="60">
+    </form>
+    </li>
   <% end %>
+
+  </ul>
+
+<!-- <form class="" action="/contacts" method="post"> -->

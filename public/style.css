@@ -6,11 +6,17 @@ header {
   text-align:center;
 }
 
+
 body {
   font-family:'Nanum Gothic',sans-serif;
   color:white;
 
 }
+
+input {
+  font-size: 40px;
+}
+
 
 
 h3 {
@@ -69,6 +75,10 @@ main ul:hover {
 main ul a {
   color:white;
   font-size: 1.3em;
+}
+
+.icons {
+  display:block;
 }
 
 
